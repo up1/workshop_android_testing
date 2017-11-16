@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         RecipeApi api = retrofit.create(RecipeApi.class);
-        api.search("").enqueue(new Callback<SearchRecipeResponse>() {
+        api.search("rice").enqueue(new Callback<SearchRecipeResponse>() {
             @Override
             public void onResponse(Call<SearchRecipeResponse> call, Response<SearchRecipeResponse> response) {
                 loadingDialog.dismiss();
