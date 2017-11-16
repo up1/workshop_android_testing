@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Recipes</string>
+    <string name="recipe_not_found">Not found</string>
+</resources>
